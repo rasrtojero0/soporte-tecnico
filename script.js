@@ -106,7 +106,7 @@ document.addEventListener("keydown", e=>{
         resultadoSemi.textContent = "SIN RESTRICCIÓN (coeficiente = " + coeficiente.toFixed(2) + ") "
     }
     if(coeficiente > 1 && coeficiente < 1.5){
-        resultadoSemi.textContent = "PUEDE VENTILAR HASTA 30.000 cal/h  (coeficiente = " + coeficiente(2) + ") "
+        resultadoSemi.textContent = "PUEDE VENTILAR HASTA 30.000 cal/h  (coeficiente = " + coeficiente.toFixed(2) + ") "
     }
     if(coeficiente > 0.6 && coeficiente < 1){
         resultadoSemi.textContent = "PUEDE VENTILAR HASTA 20.000 cal/h (coeficiente = " + coeficiente.toFixed(2) + ") "
