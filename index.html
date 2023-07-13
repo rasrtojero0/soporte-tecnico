@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Exgadet - soporte técnico</title>
+</head>
+<body>
+   
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav> -->
+ <div class="banner-container">
+     <img src="./img/banner.jpg"  class="banner" alt="">
+</div>
+
+<div class="container mb-5 mt-5" style="text-align:center">
+    <h3 class="resaltado">Soporte técnico - inspectores</h3>
+</div>    
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <b> Espacios semi cubiertos</b>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <p>Para calcular que artefactos pueden ventilar en un espacio semi cubierto se debe tomar en cuenta la superficie libre y la superficie del techo. Esos datos se aplican a una fórmula y como resultado da un coficiente que luego se lo compara con la tabla de relación y nos dice la cantidad de calorias que se puede ventilar en ese espacio.</p>
+       <b>Fórmula:</b>
+        <p><u>Superficie libre (m2 de espacio abierto) </u> = <b>coeficiente</b></p>
+        <p class="subir">Superficie techada (m2 de techo)</p>
+       <div class="container">
+        
+        <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
+            <img src="./img/semicubierto.jpeg">
+        </div>
+        <div>
+          <b>Tabla de relación:</b>
+          <ul>
+              <li>Mayor o igual a 1.5 = sin restricciones</li>
+              <li>Mayor a 1 y menor a 1.5 = hasta 30.000 cal/h</li>
+              <li>Entre 0.6 y 1 = hasta 20.000 cal/h y siempre que el conducto de evacuación de gases se encuetnre a no más de 1 metro del extremo libre</li>
+              
+          </ul>
+      </div>
+      <hr>
+        <p><b>Calcular coeficiente</b></p>
+         
+        <div class="input-group mb-3">
+          
+           <input type="number" class="form-control inpSemi" id="input-libre" placeholder="Superfice libre m2">
+       
+         </div>
+         <div class="input-group mb-3">
+       
+          <input type="number" class="form-control inpSemi" id="input-techada" placeholder="Superficie techada m2">
+        
+        </div>
+        <button class="btn btn-primary mb-2" id="btn-calcularSemi">Calcular</button>
+        <p id="resulatado-semi"> </p>
+
+
+       </div>
+    </div>
+
+
+  <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
+        <img src="./img/doble regulacion esquema.jpg" alt="">
+    </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       <b>Tabla 3 NAG200</b> 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body largo">
+        
+
+        <iframe src="img/tabla3.pdf" width="100%" height="100%" frameborder="0"></iframe> 
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ---------------------------------------------------------- -->
+
+          
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          <b>Rejilla de ventilación superior (RVS)</b>
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+         Su función principal es evacuar los productos de combustión, debe estar colocada a una altura mínima de 1.80M del piso de la habitación, en el caso de techos altos en el tercio superior y debe salir en forma directa al exterior siempre.
+         <br>
+         Cuando la habitación posea otras aberturas permanentes como extractores de aire con persiana fija o sin persianas, claraboyas y la sección de pasaje de aire de dichas aberturas supera las indicada para cada artefacto, estas podran considerarse suficientes.
+         <br>
+         En caso de que pase por otro local(indirecta) deberá tener un conducto sellado que pase por la habitación contigua.
+
+            <div class="card container mt-5 mb-5 img-fluid" style="width: 18rem;">
+                <img src="./img/ventilacion contigua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+            
+                <p class="card-text">Conducto con pendiente del 10% sección 100cm</p>
+                
+                </div>
+            </div>
+         <p>Artefacto hasta 10000Kcal/h lleva rejilla de 100cm2.</p>
+         <br>
+         <p>Cuando el artefacto o conjunto de artefactos supere las 10000Kkcal/h debe calcularse con la siguiente formula:</p>
+         <br>
+         <b>100cm2 más 3cm2 por cada 1000Kcal/h superior a 10000Kcal/h</b>
+         <br>
+         <p>Ejemplo 30000Kcal/h:</p>
+         <ul>
+            <li>10000Kcal/h ventilarán con una rejilla de 100cm2</li>
+            <li>las 20000Kcal/h restantes se dividen por 1000 : 20000/1000 = 20</li>
+            <li>20x3cm2 = 60cm2 </li>
+            <li>100cm2 + 60cm2 = 160cm2</li>
+            <li>se debe colocar una rejilla de 160cm2 o superior</li>
+         </ul>
+         <hr>
+         <p><b>Calcular RVS</b></p>
+         
+         <div class="input-group mb-3">
+            <!-- <span class="input-group-text">Cantidad de Kcal/h</span> -->
+            <input type="number" class="form-control" id="input-rvs" placeholder="Cantidad de kcal">
+            <!-- <span class="input-group-text"></span> -->
+          </div>
+         <button class="btn btn-primary mb-2" id="btn-calcular">Calcular</button>
+         <p id="resulatado-rvs"> </p>
+
+
+        </div>
+      </div>
+    </div>
+  
+    </div>
+
+  </div>
+  <!-- ------------------------------------------------------------------------------ -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive-B" aria-expanded="true" aria-controls="collapseFive-B">
+          <b>Rejilla de ventilación inferior (RVI)</b>
+        </button>
+      </h2>
+      <div id="collapseFive-B" class="accordion-collapse collapse " aria-labelledby="headingFive-BS" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Su función principal es la alimentación de aire para la combustión.
+          <br>
+          Esta entrada de aire puede ser directa desde el exterior o indirecta a través de algún ambiente contiguo, <b>NO</b> siendo este un baño o dormitorio. Figura 1.
+          <br>
+          La ubicación de esta rejilla no debe superar los 30cm del nivel de piso.
+          <br>
+          La sección de pasaje de aire exterior está en función de las características de los artefactos y del modo de evacuación de los productos de combustión como se indica en la siguiente tabla.
+
+          <div class="card container mt-5 mb-5 img-fluid" style="width: 18rem;">
+            <img src="./img/rvi.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+             <p>Figura 1</p>
+            </div>
+          </div>
+          <p><b><u>Tabla 1 Rejillas de ventilación inferior</u></b></p>
+          <div>
+            <table class="table table-striped table-hover">
+
+              <tr>
+                <td class="celda"><b>Artefactos no infrarrojos</b></td>
+                <td class="celda"><b>Pasaje de aire en cm2</b></td>
+              </tr>
+              <tr>
+                <td class="celda" >Artefacto cocina residencial hasta 10000kcal/h</td>
+                <td class="celda" >Optativa</td>
+              </tr>
+              <tr>
+                <td class="celda" >Artefactos conectados a conducto de evacuación hasta 10000kcal/h</td>
+                <td class="celda" >50cm2</td>
+              </tr>
+              <tr>
+                <td class="celda" >Artefactos conectados a conducto de evacuación más de  10000kcal/h</td>
+                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+              </tr>
+              <tr>
+                <td class="celda" >Artefacto cocina más de 10000kcal/h</td>
+                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+              </tr>
+              <tr>
+                <td class="celda" >Conjunto de artefactos en un mismo local. Ejemplo cocina, freidora, horno pizzero, etc.</td>
+                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+              </tr>
+            </table>
+          </div>  
+
+          <p>Ejemplo para calcular cuando el artefacto o cunjunto de artefactos exceden las 10000kcal:</p>
+          Tengo un termotanque de 30000Kcal/h.
+          <ul>
+            <li>10000Kcal/h ventilarán con una rejilla de 50cm2</li>
+            <li>las 20000Kcal/h restantes se dividen por 1000: 20000/1000 = 20</li>
+            <li>20x3cm2 = 60cm2 </li>
+            <li>50cm2 + 60cm2 = 110cm2</li>
+            <li>se debe colocar una rejilla de 110cm2 o superior</li>
+         </ul>
+         <hr>
+         <p><b>Calcular RVI</b></p>
+         
+         <div class="input-group mb-3">
+            <!-- <span class="input-group-text">Cantidad de Kcal/h</span> -->
+            <input type="number" class="form-control" id="input-rvi" placeholder="Cantidad de kcal">
+            <!-- <span class="input-group-text"></span> -->
+          </div>
+         <button class="btn btn-primary mb-2" id="btn-calcular-rvi">Calcular</button>
+         <p id="resulatado-rvi"> </p>
+        <hr>
+        <!-- ----------------------------------------------------------------------- -->
+        <p><b><u>REJILLA DE VENTILACIÓN ARTEFACTOS INFRARROJOS</u></b></p>
+        <ul>
+          <li>En todos los casos dichos ambientes limitarán directamente con el exterior y tendrán un volúmen no menor de 15cm3.</li>
+          <li>La potencia térmica para instalar será no mayor a 50Kcal/h por metro cúbico a calefaccionar.</li>
+          <li>Obligatoriamente llevan rejillas de ventilación superior e inferior.</li>
+        </ul>
+        <div>
+          <table class="table table-striped table-hover">
+
+            <tr>
+              <td class="celda"><b>Calentadores a rayos infrarrojos</b></td>
+              <td class="celda"><b>Abertura inferior</b></td>
+              <td class="celda"><b>Abertura superior</b></td>
+            </tr>
+            <tr>
+              <td class="celda" >Potencia térmica hasta 3000Kcal/h</td>
+              <td class="celda" >50cm2</td>
+              <td class="celda" >75cm2</td>
+            </tr>
+            <tr>
+              <td class="celda" >Desde 3001Kcal/h hasta 6000Kcal/h</td>
+              <td class="celda" >75cm2</td>
+              <td class="celda" >100cm2</td>
+            </tr>
+            <tr>
+              <td class="celda" >Desde 6001Kcal/h hasta 10000Kcal/h</td>
+              <td class="celda" >100cm2</td>
+              <td class="celda" >150cm2</td>
+            </tr>
+          </table>
+        </div>  
+        <p><b>Nota:</b> Artefactos que superan las 10000Kcal, se incrementarán las aberturas en 10cm2 inferior y 15cm2 la superior por cada 1000Kcal/h que exceda las 10000Kcal/h</p>
+
+        </div>
+      </div>
+    </div>
+  
+    </div>
+
+
+  </div>
+
+
+<!------------------------------------CONDUCTOS DE VENTILACION--------------------------------------------------->
+
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+           <b>Conductos de ventilación</b>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body largo">
+        
+
+            <iframe src="img/conductos.pdf" width="100%" height="100%" frameborder="0"></iframe> 
+    
+          </div>
+        </div> 
+
+
+<!--------------------------------------COCINAS NO APTO USO RESIDENCIAL----------------------------------------------------->
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSeven">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+     <b>Cocinas no apta uso residencial</b>
+    </button>
+  </h2>
+  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+    <div>
+      <p><ul>
+        <li>Todas las cocinas sin matrícula de aprobación deberán ir obligatoriamente con campana sin motor, rejilla inferior, in-situ y memoría descriptiva.</li>
+        <li>Cocina <b>con matrícula</b> hasta 20.000Kcal deben ir con rejilla superior de 200cm2 y rejilla inferior de 100cm2 (cocina Morelli Volta y Morelli Cristal 600)</li>
+      </ul></p>
+    </div>
+    <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
+      <img src="./img/volta550.jpg">
+      <p>Marca: MORELLI <br>
+        Modelo: 550 VOLTA <br>
+        Matricula: M01-1448-01-009</p>
+  </div>
+  <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
+    <img src="./img/cristal600.jpg">
+    <p>Marca: MORELLI <br>
+      Modelo: 600 CRISTAL <br>
+      Matricula: 01-1448-01-001
+      </p>
+</div>
+<div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
+  <a href="https://www.enargas.gob.ar/secciones/certificacion-artefacto-de-gas/elementos-aprobados.php"><img src="./img/logoEnargas.svg"></a>
+  <p><br> Verificar matricula de aprobacion de artefactos
+    </p>
+</div>
+  </div> 
+
+
+ <!-- ----------------------------------CODIGOS DE RECHAZO--------------------------------------------------------------- -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+       <b>Códigos de Rechazo</b> 
+      </button>
+    </h2>
+    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"></span>
+          <input type="text" class="form-control" name="buscador" id="buscador"  placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      
+       
+          <table class="table table-striped table-hover"><b class="articulo">GABINETE Y RECINTO PARA MEDIDORES</b>
+            <tr>
+              <td class="articulo"><b>4001</b> - Rigido, incompleto o mal armado</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4002</b> - No utilizar llave de paso total o falta en medidor rotativo</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4011</b> - Gabinete no reglamentario, (s/revocar,no estanco, desnivelado, etc)</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4021</b> - Mal ubicado gabinete para reg. y/o medidor en LM zona lib. Acc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4031</b> - Matriculado no deja regulador en obra</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4051</b> - Regulación mal armada</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4071</b> - Regulador capacidad inferior a requerida</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4101</b> - Bateria mal armada, iluminacion deeficiente, etc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4102</b> - Instalacion y/o artefacto en bateria no son a prueba de explosion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4111</b> - Regulador matricula vencida o no aprobado</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4112</b> - Brida no reglamentaria, desnivelada o no alineada</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4211</b> - Tomas del medidor en batería sin taponar</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4251</b> - Gabinetes para medidores fuera de medida</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4351</b> - Orificio en base de gabinete mal ubicado o sin ejecutar</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4451</b> - Puerta de gabinete no reglamentaria/ con candado/ sin llave de cuadro</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4511</b> - Barrales sin clasificar</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4551</b> - Barrales mal clasificados</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4561</b> - Toma cañeria gabinete sin clasificar</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4601</b> - Toma cañeria gabinete mal clasificada</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4602</b> - Mal ubicado el gabinete para regulador y/o medidor</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4652</b> - Mas de cinco clientes con un solo regulador</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4731</b> - Tomas para medidor desniveladas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4732</b> - Gabinete &lt 0,50m &lt0,30m. Tab.elec. Tab. de luz</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4741</b> - Falta filtro y/o catucho filtrante en medidor reotativo</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4742</b> - Puerta de bateria o ante camara no abre hacia afuera</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4751</b> - Falta puerta/ marco gabinete</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4752</b> - Servicios asistenciales publicos , etc. con un solo regulador</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>4851</b> - Armado para instalacion de medidor rotativo defectuoso</td>
+            </tr>
+          </table>
+
+          <table class="table table-striped table-hover"><b class="articulo">CAÑERIAS</b>
+            <tr>
+              <td class="articulo"><b>2001</b> - Mal proyectado recorrido de cañeria</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2011</b> - Cañeria armada con teflon o no fraguante</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2041</b> - Cañeria no corre por espacios comunes</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2054</b> - Localizar perdidas en cañeria con agua con autorizacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2104</b> - Localizar perdidas en cañeria con agua sin autorizacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2105</b> - Probar cañerias utilizando soluciones corrosibas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2156</b> - Colocar cañeria con diametro insuficiente para la conduccion del caudal necesario</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2203</b> - Atravesar prolong. lugares habitables dormitorios,etc</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2213</b> - Atravesar prolong. cocinas locales sin previa autorizacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2223</b> - Prolong. ejecutar forma no reglamentaria encamisada, etc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2253</b> - Cañeria clandestina (sin declarar)</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2302</b> - Colocar union doble en cañeria</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2350</b> - Perdida en regulador rigido, dloble regulacion o cañerias internas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2403</b> - No solicitar la inspeccion ocular descubierta de cañerias y conductos de ventilacion (individual o colectivo)</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2453</b> - Omitir realizacion de la prueba de obstruccion de cañeria</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2501</b> - No efectuar la aislacion dielectrica de cañerias en la forma reglamentaria</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2551</b> - Colocar cañeria en contacto con conductores electricos, caños de agua, albañales, etc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2601</b> - Falta engranpado o deficiente</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2651</b> - Instalar caños curvados (no levemente)</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2701</b> - Cañeria enterrada sin profundidad reglamentaria</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2043</b> - Cañeria sin ejecutar (parcial y/o final) </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2053</b> - Colocar tee futuro consumo residencial </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2056</b> - Prolongacion de baja presion, y/o barrales con diametro insuficiente s/tabla</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2103</b> - No utilizar llave de paso total o falta </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2112</b> - Bridas no reglamentarias</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2143</b> - Cañeria tapada antes de los tres dias habiles inspeccion parcial </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2233</b> - Llave de paso de diametro insuficiente </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2245</b> - Barral de bateria con diametro insuficiente segun tabla </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2754</b> - Sacar/ empotrar/ tralsadar/ retirar/ prolongacion existente sin el permiso correspondiente </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2800</b> - Por instalar caños, accesorios o materiales que no se hallen especificados en el presente reglamento </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>2850</b> - Cañeria sin proteger y/o pintar </td>
+            </tr>
+          </table>
+
+        
+          <table class="table table-striped table-hover"><b class="articulo">VENTILACIONES</b>
+            <tr>
+                <td class="articulo"><b>1001</b> - No efectuar ventilacion de nicho de acuerdo a reglamento </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1011</b> - Abertura y/o ventilacion insuficiente </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1021</b> - Tramo horizontal conducto ventilacion tiro natural supera 2m </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1031</b> - Longitud tramo vertical no cumple 1,5 veces tramo horizontal </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1041</b> - Codo a la salida del artefacto TN antes de 0,50m tramo vertical </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1053</b> - Omitir aberturas de ventilaciones permanente inferior o superior </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1061</b> - Sombrerete de ventilacion no colocado o no reglamentario</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1103</b> - Ejecutar en forma no reglamentaria los conductos de ventilacion de artefactos u omitir su ejecucion </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1111</b> - No hermetizar codo articulado en ambiente interno </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1152</b> - Rematar en forma deficiente o no reglamentaria los conductos de ventilacion de artefactos </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1201</b> - Faltan y/o deficiente grapas conducto de ventilacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1206</b> - Instalar estufa de tiro natural sin ventilacion al exterior</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1223</b> - Falta intersector de aire termo, calefon, calderas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1253</b> - Ejecutar bateria para medidores sin ventilacion o deficiente</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1303</b> - Instalar conductos unicos de ventilacion en forma no reglamentaria (Cove) </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1351</b> - Instalar estufar RI en ambientes cuyo volumen no guarde la relacion debida con el consumo del artefacto y aberturas al exterior  </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1402</b> - Falta rejilla de ventilacion inferior y/o superior</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>1454</b> - Rejilla de ventilacion colocada sin aberturas </td>
+            </tr>
+          </table>
+
+          <table class="table table-striped table-hover"><b class="articulo">ARTEFACTOS</b>
+            <tr>
+                <td class="articulo"><b>3002</b> - Artefactos sin colocar declarados en certificados de inspeccion </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3011</b> - Llave inaccesible desde el exterior </td>
+            </tr>
+            <tr>
+             <td class="articulo"><b>3012</b> - Toma o artefacto expuesto a corriente de aire  </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3021</b> - Memoria descriptiva artefacto habilitar insuficiente  </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3031</b> - Llave de paso de cocina de menos de 0,40m sobre plancha  </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3056</b> - Estufa de tiro balanceado en dormitorio, baño, paso sin colocar </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3106</b> - No instalar estufa en colegios, lugares publicos </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3151</b> - Mal indicada ubicacion de artefactos </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3202</b> - Cañeria de cobre de longitud mayor 0,50m </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3203</b> - Artefacto calefon o caldera de tiro balanceado sin colocar  </td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3206</b> - Instalar calefones o termotanques de TN o tomas para los mismos, en ambientes o dormitorios unicos que no cumplen la reglamentacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3256</b> - Instalar estufas de tiraje comun, RI o tomas para las mismas, en dormitorios, departamentos de ambiente unico, baños y pasos que no se ajusten a la reglamentacion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3301</b> - No taponar llave candado o tomas de futuros artefactos</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3304</b> - Conectar artefacto con goma u otros elementos de conexion no reglamentarios</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3353</b> - Colocar artefacto s/llave de paso o que este bloquee + de un artefacto</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3406</b> - Instalar estufas de tiraje comun sin la ventilacion al exterior</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3453</b> - Instalar artefacto s/dispositivo de seguridad cuando la reg exige</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3503</b> - Toma o artefacto en forma clandestina o no declarado</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3551</b> - Instalar artefactos en espacios que no reunen las condiciones reglamentarias</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3601</b> - Instalar en nichos calefones no aprobados para ese fin</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3651</b> - Artefactos que no estan rigidamente instalados</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3701</b> - Colocar estufa de tiro balanceado junto a ventana</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3751</b> - Artefacto instalado en lugar de dificil acceso</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3801</b> - Artefacto colocado mayor capacidad que el declarado</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3852</b> - Artefacto sobre base recinto material combustible</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3853</b> - Artefacto en malas condiciones de seguridad y/o funcionamiento</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3901</b> - Colocar calefones y/o termotanques de tiro natural sobre piletas o cocinas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3951</b> - No solicitar habilitacion IN-SITU</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3961</b> - Cocina sin colocar residencial comercial</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>3971</b> - Instalar en ind. 50% min de artefactos o consumo sea 50%</td>
+            </tr>
+          </table>
+          
+          <table class="table table-striped table-hover"><b class="articulo">ADMINISTRATIVOS</b>
+            <tr>
+              <td class="articulo"><b>6001</b> - Documentacion incompleta</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6011</b> - Listado de materiales incompletos, reg, cañ, gab, etc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6151</b> - Mal indicada la ubicacion de los artefactos</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6201</b> - No presentacion plano combustion aprobado</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6251</b> - Loc mal indicada/ alt. mal infomada/ falta numero</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6301</b> - No coinciden artefactos en obra con los declarados</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6321</b> - No coinciden artefactos en certificado parcial o final</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6351</b> - No proyectar tee futuro medidor</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6401</b> - Plano mal ejecutado y/o incompleto</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6451</b> - Falta listado de materiales en plano</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6501</b> - Cantidad de usuarios mal indicada</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>6511</b> - No presenta matricula de soldador o fusionista</td>
+            </tr>
+          </table>
+
+          <table class="table table-striped table-hover"><b class="articulo">TERMOFUSION</b>
+            <tr>
+              <td class="articulo"><b>7001</b> - Cañeria exterior sin recubrimiento</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7012</b> - Mal fusionado accesorio, desviado o desnivelado/ torcido/ etc.</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7022</b> - Utilizar accesorios no aprobados para termofusion</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7032</b> - Cañeria no embutida por ambientes habitables</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7042</b> - Mezclar accesorios PE distintas marcas</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7055</b> - Col cañerias con diam insuf para cond del caudal necesario</td>
+            </tr>
+            <tr>
+              <td class="articulo"><b>7101</b> - Cañeria y/o accesorios vencidos</td>
+            </tr>
+          </table>
+
+          <table class="table table-striped table-hover"><b class="articulo">VARIOS</b>
+              <tr>
+                <td class="articulo"><b>5101</b> - Obra no conforme con lo declarado en plano</td>
+              <tr>
+              <tr>
+                <td class="articulo"><b>5021</b> - Ausente, Coordinado con matriculado y/o titular </td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5031</b> - Tramite mal ingresado por matriculado</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5041</b> - Matriculado no tiene incumbencia NAG 200 8.2-8.3</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5053</b> - Colocar tee sin declarar</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5121</b> - Arbitrar los medios para realizar la inspeccion</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5151</b> - Tercera visita ausente</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5251</b> - No presentar final medidor mayor de 10m3/h</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>5301</b> - Falta chapa litrografiada en llave de paso ambiente unico</td>
+              </tr>
+              <tr>
+                <td class="articulo"><b>4999</b> - HURTO DE GAS</td>
+              </tr>
+
+              
+           </table>
+          
+
+
+
+
+
+
+        </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+           Instalaciones internas 
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              Es la cañería interna, más los artefactos y conexiones de los mismos, rejillas de ventilaciones permanentes y conductos de evacuación de gases de combustión según corresponda al artefacto (es lo que verificamos al realizar las tareas).
+            </div>
+        </div> -->
+
+
+      </div>
+
+
+    
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

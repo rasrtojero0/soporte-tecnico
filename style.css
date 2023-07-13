@@ -1,0 +1,78 @@
+
+.banner-container{
+    display: flex;
+    width: 100%
+}
+.banner{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+
+
+.punto1{
+margin-top: 2px;
+}
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+.celda{
+    border: .5px solid rgb(229, 229, 229);
+}
+
+/* ------------------BUSCADOR------------------------ */
+
+
+
+
+#listaArticulos{
+    font-size: 30px;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.filtro{
+    display: none;
+}
+
+.subir{
+    margin-top: -18px;
+}
+.inpSemi{
+    width: 80px;
+}
+
+.largo{
+    height: 800px;
+}
+
+.resaltado{
+    
+        color: black;
+        -webkit-text-stroke: 1px #2196F3;
+        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    
+}
