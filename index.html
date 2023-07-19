@@ -65,21 +65,26 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-       <p>Para calcular que artefactos pueden ventilar en un espacio semi cubierto se debe tomar en cuenta la superficie libre y la superficie del techo. Esos datos se aplican a una fórmula y como resultado da un coficiente que luego se lo compara con la tabla de relación y nos dice la cantidad de calorias que se puede ventilar en ese espacio.</p>
-       <b>Fórmula:</b>
-        <p><u>Superficie libre</u> = <b>coeficiente</b></p>
-        <p class="subir">Superficie techada</p>
-       <div class="container">
         
-        <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
-            <img src="./img/semicubierto.jpeg">
-        </div>
-        <div>
+       <p>Para calcular que artefactos pueden ventilar en un espacio semi cubierto se debe tomar en cuenta: <br>
+        <ul>
+          <li>La superficie libre en m2 (<b>SL</b>)</li>
+          <li>La superficie del techo en m2(<b>ST</b> )</li>
+        </ul>. 
+        <b class="margen1"><i>Fórmula:</i></b>
+      <div class="cuadro">
+        <b>SL/ST = coeficiente</b>
+      </div>  
+
+       <br>
+
+       <div class="container">
+
           <b>Tabla de relación:</b>
           <ul>
-              <li>Mayor o igual a 1.5 = sin restricciones</li>
-              <li>Mayor a 1 y menor a 1.5 = hasta 30.000 cal/h</li>
-              <li>Entre 0.6 y 1 = hasta 20.000 cal/h y siempre que el conducto de evacuación de gases se encuetnre a no más de 1 metro del extremo libre</li>
+              <li>Coeficiente mayor o igual a 1.5 = sin restricciones</li>
+              <li>Coeficiente mayor a 1 y menor a 1.5 = hasta 30.000 cal/h</li>
+              <li>Coeficiente entre 0.6 y 1 = hasta 20.000 cal/h y siempre que el conducto de evacuación de gases se encuetre a no más de 1 metro del extremo libre</li>
               
           </ul>
       </div>
@@ -101,14 +106,10 @@
         <p id="resulatado-semi2" class="rojo"> </p>
         <p id="resulatado-semi3" class="bold"></p>
        </div>
+       <p class="margen"><b>NOTA:</b>En un espacio semi cubierto solamente se podran aceptar salidas de tiro balanceado si se encuentran a 1m como máximo del espacio libre.</p>
     </div>
+</div>
 
-
-  <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
-        <img src="./img/doble regulacion esquema.jpg" alt="">
-    </div>
-    </div>
-  </div>
   
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
@@ -139,23 +140,25 @@
       </h2>
       <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-         Su función principal es evacuar los productos de combustión, debe estar colocada a una altura mínima de 1.80M del piso de la habitación, en el caso de techos altos en el tercio superior y debe salir en forma directa al exterior siempre.
-         <br>
-         Cuando la habitación posea otras aberturas permanentes como extractores de aire con persiana fija o sin persianas, claraboyas y la sección de pasaje de aire de dichas aberturas supera las indicada para cada artefacto, estas podran considerarse suficientes.
-         <br>
-         En caso de que pase por otro local(indirecta) deberá tener un conducto sellado que pase por la habitación contigua.
-
-            <div class="card container mt-5 mb-5 img-fluid" style="width: 18rem;">
-                <img src="./img/ventilacion contigua.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-            
-                <p class="card-text">Conducto con pendiente del 10% sección 100cm</p>
-                
-                </div>
-            </div>
-         <p>Artefacto hasta 10000Kcal/h lleva rejilla de 100cm2.</p>
-         <br>
-         <p>Cuando el artefacto o conjunto de artefactos supere las 10000Kkcal/h debe calcularse con la siguiente formula:</p>
+          <ul>
+            <li>Su función principal es evacuar los productos de combustión</li>
+            <li>Debe estar colocada a una altura mínima de 1.80M del piso de la habitación</li>
+            <li>Debe esta ubicada en el tercio superior de la pared y debe salir en forma directa al exterior siempre</li>
+            <li>En caso de que pase por otro local(indirecta) deberá tener un conducto sellado que pase por la habitación contigua.</li>
+          </ul>
+          
+          <div class="card container mt-5 mb-5 img-fluid" style="width: 18rem;">
+            <img src="./img/ventilacion contigua.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+          
+            <p class="card-text">Conducto con pendiente del 10% sección 100cm</p>
+            </div>   
+          </div>
+          <ul>
+            <li>Cuando la habitación posea otras aberturas permanentes como extractores de aire con persiana fija o sin persianas, claraboyas y la sección de pasaje de aire de dichas aberturas supera las indicada para cada artefacto, estas podran considerarse suficientes.</li>
+            <li>Artefacto hasta 10000Kcal/h lleva rejilla de 100cm2.</li>
+          </ul>
+           <p>Cuando el artefacto o conjunto de artefactos supere las 10000Kkcal/h debe calcularse con la siguiente formula:</p>
          <br>
          <b>100cm2 más 3cm2 por cada 1000Kcal/h superior a 10000Kcal/h</b>
          <br>
@@ -196,70 +199,79 @@
       </h2>
       <div id="collapseFive-B" class="accordion-collapse collapse " aria-labelledby="headingFive-BS" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Su función principal es la alimentación de aire para la combustión.
-          <br>
-          Esta entrada de aire puede ser directa desde el exterior o indirecta a través de algún ambiente contiguo, <b>NO</b> siendo este un baño o dormitorio. Figura 1.
-          <br>
-          La ubicación de esta rejilla no debe superar los 30cm del nivel de piso.
-          <br>
-          La sección de pasaje de aire exterior está en función de las características de los artefactos y del modo de evacuación de los productos de combustión como se indica en la siguiente tabla.
-
+          <ul>
+            <li>Su función principal es la alimentación de aire para la combustión.</li>
+            <li> Esta entrada de aire puede ser directa desde el exterior o indirecta a través de algún ambiente contiguo, <b>NO</b> siendo este un baño o dormitorio.</li>
+          </ul>
           <div class="card container mt-5 mb-5 img-fluid" style="width: 18rem;">
             <img src="./img/rvi.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-             <p>Figura 1</p>
+             <p>Rejilla de ventilación inferior compensada</p>
             </div>
           </div>
-          <p><b><u>Tabla 1 Rejillas de ventilación inferior</u></b></p>
-          <div>
-            <table class="table table-striped table-hover">
-
-              <tr>
-                <td class="celda"><b>Artefactos no infrarrojos</b></td>
-                <td class="celda"><b>Pasaje de aire en cm2</b></td>
-              </tr>
-              <tr>
-                <td class="celda" >Artefacto cocina residencial hasta 10000kcal/h</td>
-                <td class="celda" >Optativa</td>
-              </tr>
-              <tr>
-                <td class="celda" >Artefactos conectados a conducto de evacuación hasta 10000kcal/h</td>
-                <td class="celda" >50cm2</td>
-              </tr>
-              <tr>
-                <td class="celda" >Artefactos conectados a conducto de evacuación más de  10000kcal/h</td>
-                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
-              </tr>
-              <tr>
-                <td class="celda" >Artefacto cocina más de 10000kcal/h</td>
-                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
-              </tr>
-              <tr>
-                <td class="celda" >Conjunto de artefactos en un mismo local. Ejemplo cocina, freidora, horno pizzero, etc.</td>
-                <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
-              </tr>
-            </table>
-          </div>  
-
-          <p>Ejemplo para calcular cuando el artefacto o cunjunto de artefactos exceden las 10000kcal:</p>
-          Tengo un termotanque de 30000Kcal/h.
           <ul>
-            <li>10000Kcal/h ventilarán con una rejilla de 50cm2</li>
-            <li>las 20000Kcal/h restantes se dividen por 1000: 20000/1000 = 20</li>
-            <li>20x3cm2 = 60cm2 </li>
-            <li>50cm2 + 60cm2 = 110cm2</li>
-            <li>se debe colocar una rejilla de 110cm2 o superior</li>
-         </ul>
-         <hr>
-         <p><b>Calcular RVI</b></p>
-         
-         <div class="input-group mb-3">
-            <!-- <span class="input-group-text">Cantidad de Kcal/h</span> -->
-            <input type="number" class="form-control" id="input-rvi" placeholder="Cantidad de kcal">
-            <!-- <span class="input-group-text"></span> -->
-          </div>
-         <button class="btn btn-primary mb-2" id="btn-calcular-rvi">Calcular</button>
-         <p id="resulatado-rvi"> </p>
+            <li> La ubicación de esta rejilla no debe superar los 30cm del nivel de piso.</li>
+            <li>         La sección de pasaje de aire exterior está en función de las características de los artefactos y del modo de evacuación de los productos de combustión como se indica en la siguiente tabla.
+
+ 
+              <p><b><u>Tabla 1 Rejillas de ventilación inferior</u></b></p>
+              <div>
+                <table class="table table-striped table-hover">
+    
+                  <tr>
+                    <td class="celda"><b>Artefactos no infrarrojos</b></td>
+                    <td class="celda"><b>Pasaje de aire en cm2</b></td>
+                  </tr>
+                  <tr>
+                    <td class="celda" >Artefacto cocina residencial hasta 10000kcal/h</td>
+                    <td class="celda" >Optativa</td>
+                  </tr>
+                  <tr>
+                    <td class="celda" >Artefactos conectados a conducto de evacuación hasta 10000kcal/h</td>
+                    <td class="celda" >50cm2</td>
+                  </tr>
+                  <tr>
+                    <td class="celda" >Artefactos conectados a conducto de evacuación más de  10000kcal/h</td>
+                    <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+                  </tr>
+                  <tr>
+                    <td class="celda" >Artefacto cocina más de 10000kcal/h</td>
+                    <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+                  </tr>
+                  <tr>
+                    <td class="celda" >Conjunto de artefactos en un mismo local. Ejemplo cocina, freidora, horno pizzero, etc.</td>
+                    <td class="celda" ><b>50cm2 más 3cm2 por cada 1000kcal/h</b></td>
+                  </tr>
+                </table>
+              </div>  
+            </li>
+          </ul>
+            <div>
+              <p>Ejemplo para calcular cuando el artefacto o cunjunto de artefactos exceden las 10000kcal:</p>
+              Tengo un termotanque de 30000Kcal/h.
+              <ul>
+                <li>10000Kcal/h ventilarán con una rejilla de 50cm2</li>
+                <li>las 20000Kcal/h restantes se dividen por 1000: 20000/1000 = 20</li>
+                <li>20x3cm2 = 60cm2 </li>
+                <li>50cm2 + 60cm2 = 110cm2</li>
+                <li>se debe colocar una rejilla de 110cm2 o superior</li>
+             </ul>
+             <hr>
+             <p><b>Calcular RVI</b></p>
+             
+             <div class="input-group mb-3">
+                <!-- <span class="input-group-text">Cantidad de Kcal/h</span> -->
+                <input type="number" class="form-control" id="input-rvi" placeholder="Cantidad de kcal">
+                <!-- <span class="input-group-text"></span> -->
+              </div>
+             <button class="btn btn-primary mb-2" id="btn-calcular-rvi">Calcular</button>
+             <p id="resulatado-rvi"> </p>
+            </div>
+     </li>
+          </ul>
+            
+      
+ 
         <hr>
         <!-- ----------------------------------------------------------------------- -->
         <p><b><u>REJILLA DE VENTILACIÓN ARTEFACTOS INFRARROJOS</u></b></p>
@@ -316,15 +328,28 @@
           </button>
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-          <div class="accordion-body largo">
-        
-
-            <img src="img/conductosb.jpeg" width="90%" height="100%" frameborder="0">
-    
+          <div class="accordion-body">
+            <h5 class="cuadro2">CALCULO: Kcal/250 = Area libre en cm2</h5>
+            <hr>
+            <br>
+            <p><b><u>CONDUCTOS CILÍNDRICOS</u></b></p>
+           <div class="accordion-body largo">
+            <img src="img/tablaCilindro.jpeg" width="85%" height="100%" frameborder="0" class="imgTabla">
           </div>
-        </div> 
+          <p><b><u>CONDUCTOS ANGULARES</u></b></p>
+          <div class="accordion-body largo">
+            <img src="img/angulares.jpeg" width="85%" height="100%" frameborder="0" class="imgTabla">
+          </div>
+     
+            
 
-
+        
+            
+    
+         
+          
+        </div>
+       </div>
 <!--------------------------------------COCINAS NO APTO USO RESIDENCIAL----------------------------------------------------->
 
 <div class="accordion-item">
@@ -337,7 +362,7 @@
     <div>
       <p><ul>
         <li>Todas las cocinas sin matrícula de aprobación deberán ir obligatoriamente con campana sin motor, rejilla inferior, in-situ y memoría descriptiva.</li>
-        <li>Cocina <b>con matrícula</b> hasta 20.000Kcal deben ir con rejilla superior de 200cm2 y rejilla inferior de 100cm2 (cocina Morelli Volta y Morelli Cristal 600)</li>
+        <li>Cocina <b>con matrícula</b> hasta 20.000Kcal deben ir con rejilla superior de 200cm2 y rejilla inferior de 100cm2 (por ejemplo cocina Morelli Volta y Morelli Cristal 600,etc)</li>
       </ul></p>
     </div>
     <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
@@ -355,7 +380,7 @@
 </div>
 <div class="card mt-5 mb-5 mx-auto img-fluid" style="width: 18rem;">
   <a href="https://www.enargas.gob.ar/secciones/certificacion-artefacto-de-gas/elementos-aprobados.php"><img src="./img/logoEnargas.svg"></a>
-  <p><br> Verificar matricula de aprobacion de artefactos
+  <p><br> <b>Verificar matricula de aprobacion de artefactos</b>
     </p>
 </div>
   </div> 
