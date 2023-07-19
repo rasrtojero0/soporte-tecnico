@@ -93,6 +93,8 @@ document.addEventListener("keydown", e=>{
   libre = document.getElementById("input-libre");
   techada = document.getElementById("input-techada");
   resultadoSemi = document.getElementById("resulatado-semi");
+  resultadoSemi2 = document.getElementById("resulatado-semi2");
+  resultadoSemi3 = document.getElementById("resulatado-semi3");
   calcularSemi = document.getElementById("btn-calcularSemi");
 
   calcularSemi.addEventListener("click",calculoSemi);
@@ -104,12 +106,23 @@ document.addEventListener("keydown", e=>{
 
     if(coeficiente >= 1.5){
         resultadoSemi.textContent = "SIN RESTRICCIÓN (coeficiente = " + coeficiente.toFixed(2) + ") "
+        resultadoSemi2.textContent = ""
+        resultadoSemi3.textContent = ""
     }
-    if(coeficiente > 1 && coeficiente < 1.5){
-        resultadoSemi.textContent = "PUEDE VENTILAR HASTA 30.000 cal/h  (coeficiente = " + coeficiente + ") "
+    if(coeficiente >= 1 && coeficiente < 1.5){
+        resultadoSemi.textContent = "PUEDE VENTILAR HASTA 30.000 cal/h  (coeficiente = " + coeficiente.toFixed(2) + ") "
+        resultadoSemi2.textContent = ""
+        resultadoSemi3.textContent = ""
     }
     if(coeficiente > 0.6 && coeficiente < 1){
         resultadoSemi.textContent = "PUEDE VENTILAR HASTA 20.000 cal/h (coeficiente = " + coeficiente.toFixed(2) + ") "
+        resultadoSemi2.textContent = ""
+        resultadoSemi3.textContent = ""
+    }
+    if(coeficiente < 0.6){
+        resultadoSemi2.textContent = "NO SE PUEDE VENTILAR EN ESE ESPACIO (coeficiente = " + coeficiente.toFixed(2) + ") "
+        resultadoSemi3.textContent = "DEBE EFECTUAR VENTILACIÓN POR CONDUCTO"
+        resultadoSemi.textContent = ""
     }
 
   }
