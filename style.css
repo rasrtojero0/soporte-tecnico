@@ -64,7 +64,10 @@ margin-top: 2px;
 
 .largo{
     height: 800px;
+    display: flex;
+    justify-content: center;
 }
+
 
 .resaltado{
     
@@ -93,7 +96,7 @@ margin-top: 2px;
 }
 .cuadro2{
     border: 1px solid red;
-    width: 400px;
+    width: 320px;
     padding-left: 20px;
 
 }
@@ -110,6 +113,6 @@ margin-top: 2px;
 }
 
 .imgTabla{
-    width: fit-content;
+    
     height: 95%;
 }
