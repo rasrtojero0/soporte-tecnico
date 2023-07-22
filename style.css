@@ -116,3 +116,16 @@ margin-top: 2px;
     
     height: 95%;
 }
+.utilidades{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+.margenP{
+    margin-left: 5px;
+}
+
+.imgU{
+    width: 10rem;
+    height: 10rem;
+}
