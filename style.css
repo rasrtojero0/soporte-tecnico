@@ -122,10 +122,12 @@ margin-top: 2px;
     margin: 2px;
 }
 .margenP{
-    margin-left: 5px;
+    margin-left: 15px;
+    color: #0071cd;
 }
 
 .imgU{
     width: 10rem;
     height: 10rem;
+    font-style: italic;
 }
